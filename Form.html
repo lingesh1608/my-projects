@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-page">
+      <div id="header1">
+        <header class="header">
+          <h1>REGISTRATION FORM</h1>
+        </header>
+      </div>
+
+      <form class="form">
+        <div class="form-g">
+          <label for="username">Name:</label>
+          <input type="text" name="username" id="username" required />
+        </div>
+
+        <div class="form-g">
+          <label for="mail">Email:</label>
+          <input type="email" name="mail" id="mail" required />
+        </div>
+
+        <div class="form-g">
+          <label for="age">Age:</label>
+          <input type="number" name="age" id="age" min="19" max="35" />
+        </div>
+
+        <div class="form-g">
+          <label>Select the option given below: </label>
+          <select id="dropdown" class="selection" name="selection">
+            <option disabled selected value>select any one</option>
+            <option value="1">one</option>
+            <option value="2">two</option>
+            <option value="3">three</option>
+            <option value="4">four</option>
+          </select>
+        </div>
+        <div class="form-g">
+          <label>Radiobtn</label>
+          <label
+            ><input
+              type="radio"
+              class="radiobtn"
+              name="choice"
+              value="yes"
+              checked
+            />Yes</label
+          >
+          <label
+            ><input
+              type="radio"
+              class="radiobtn"
+              name="choice"
+              value="no"
+            />No</label
+          >
+          <label
+            ><input
+              type="radio"
+              class="radiobtn"
+              name="choice"
+              value="maybe"
+            />Maybe</label
+          >
+        </div>
+        <div class="form-g">
+          <label>checkbox..</label>
+          <label>
+            <input
+              type="checkbox"
+              name="ckbox"
+              class="checkbox"
+              value="one"
+            />one
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              name="ckbox"
+              class="checkbox"
+              value="two"
+            />two
+          </label>
+        </div>
+
+        <div class="form-g">
+          <textarea class="text-area" placeholder="enter comments"></textarea>
+        </div>
+        <button type="submit" class="submit-btn" id="submit">submit</button>
+      </form>
+    </div>
+  </body>
+</html>
